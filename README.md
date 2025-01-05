@@ -34,7 +34,7 @@ npx drizzle-kit studio
 Ensure you create a `.env.local` file in the project root with the following structure:
 
 ```plaintext
-NEXT_PUBLIC_DATABASE_URL=<your-database-url>
+DATABASE_URL=<your-database-url>
 ```
 
 Replace `<your-database-url>` with the connection string for your database.
