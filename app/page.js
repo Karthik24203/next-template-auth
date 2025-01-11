@@ -1,5 +1,12 @@
+"use client"
+import { UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 
 export default function Home() {
-  return <div>hello</div>;
+  return (
+    <div>
+      hello
+      <UserButton />
+    </div>
+  );
 }

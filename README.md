@@ -35,9 +35,24 @@ Ensure you create a `.env.local` file in the project root with the following str
 
 ```plaintext
 DATABASE_URL=<your-database-url>
+
 ```
 
 Replace `<your-database-url>` with the connection string for your database.
+
+```plaintext
+# Public API key for your frontend
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=<your-publishable-key>
+
+# Secret API key for server-side authentication
+CLERK_SECRET_KEY=<your-secret-key>
+
+# Custom routes for Clerk's sign-in and sign-up pages
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+```
+
+Add the above clerk variables to your `.env.local` file. Replace `<your-publishable-key>` and `<your-secret-key>` with the keys from your Clerk dashboard.
 
 ---
 
